@@ -1,10 +1,15 @@
 ---
-
 title: "Relatorio"
 author: "Amanda"
-date: "13/02/2020"
-output: html_document
+date: "14/02/2020"
+output: 
+  word_document:
+    reference_docx: ../docs/template_intro.docx
+csl: ../citation/nature.csl
+bibliography: ../citation/AED.bib
+abstract: "My abstract"
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -29,3 +34,10 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+![](../figs/figura01.png)
+
+A análise exploratória de datos é essencial [@tukey_exploratory_1977].
+
+# References
